@@ -1,0 +1,53 @@
+AppBundle\Entity\Members:
+    type: entity
+    table: members
+    uniqueConstraints:
+        email:
+            columns:
+                - email
+    id:
+        memberId:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: member_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        username:
+            type: string
+            nullable: false
+            length: 25
+            options:
+                fixed: false
+        email:
+            type: string
+            nullable: false
+            length: 200
+            options:
+                fixed: false
+        firstname:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+        lastname:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+        password:
+            type: string
+            nullable: false
+            length: 150
+            options:
+                fixed: false
+        dateOfBirth:
+            type: date
+            nullable: true
+            column: date_of_birth
+    lifecycleCallbacks: {  }
