@@ -31,10 +31,12 @@ class Client extends BaseClient
         return $this->id;
     }
 
-   public function __construct()
+   public function __construct(EntityManager $em)
     {
         parent::__construct();
-        // your own logic
+          $this->request = Request::createFromGlobals();
+        $this->post = $this->request->request->all();
+        $this->em = $em;
     } 
 }
 
