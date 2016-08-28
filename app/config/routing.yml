@@ -3,9 +3,10 @@ api:
     type:     annotation
     prefix:   /
 
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+# app:
+#     resource: "@AppBundle/Controller/"
+#     type:     annotation
+
 # app/config/routing.yml
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
@@ -14,6 +15,13 @@ NelmioApiDocBundle:
 fos_oauth_server_token:
     resource: "@FOSOAuthServerBundle/Resources/config/routing/token.xml"
 
+fos_oauth_server_authorize:
+    resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
+
 # app/config/routing.yml
-fos_user:
-    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+# fos_user:
+    # resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+api_demos:
+    type: rest
+    resource: ApiBundle\Controller\DemoController

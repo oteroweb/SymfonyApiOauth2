@@ -79,13 +79,13 @@ nelmio_cors:
     paths:
         '^/api/':
             allow_origin: ['*']
-            allow_headers: ['X-Custom-Auth']
+            allow_headers: ['*']
             allow_methods: ['POST', 'PUT', 'GET', 'DELETE']
             max_age: 3600
         '^/':
             origin_regex: true
             allow_origin: ['^http://localhost:[0-9]+']
-            allow_headers: ['X-Custom-Auth']
+            allow_headers: ['*']
             allow_methods: ['POST', 'PUT', 'GET', 'DELETE']
             max_age: 3600
             hosts: ['^api\.']
@@ -104,7 +104,7 @@ fos_user:
     firewall_name: api                                  # Seems to be used when registering user/reseting password,
                                                         # but since there is no "login", as so it seems to be useless in
                                                         # our particular context, but still required by "FOSUserBundle"
-    user_class: Acme\ApiBundle\Entity\User
+    user_class: ApiBundle\Entity\User
 
 
 fos_oauth_server:
