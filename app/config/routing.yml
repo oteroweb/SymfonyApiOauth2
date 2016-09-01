@@ -22,6 +22,11 @@ fos_oauth_server_authorize:
 # fos_user:
     # resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
-api_demos:
+
+fos_oauth_server_authorize:
+    resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
+
+api:
     type: rest
-    resource: ApiBundle\Controller\DemoController
+    resource: "@ApiBundle/Resources/config/routing.yml"
+    prefix: /

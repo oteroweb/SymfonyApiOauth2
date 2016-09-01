@@ -1,0 +1,5 @@
+user:
+    type: rest
+    resource: ApiBundle\Controller\UserController
+    parent: organisation
+

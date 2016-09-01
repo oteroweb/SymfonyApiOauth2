@@ -99,6 +99,30 @@ fos_rest:
         include_format: false                           # We do not include format in request, so that all responses
                                                         # will eventually be JSON formated
 
+    # new
+    param_fetcher_listener: true
+    body_listener: true
+    format_listener: true
+    view:
+        view_response_listener: 'force'
+
+
+# Sensio Framework Extra Configuration
+
+# new
+sensio_framework_extra:
+    view:
+        annotations: false
+    router:
+        annotations: true
+
+
+
+
+
+
+
+
 fos_user:
     db_driver: orm
     firewall_name: api                                  # Seems to be used when registering user/reseting password,
