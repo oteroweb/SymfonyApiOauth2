@@ -1,7 +1,18 @@
-api:
-    resource: "@ApiBundle/Controller/"
-    type:     annotation
-    prefix:   /
+# api:
+#     resource: "@ApiBundle/Controller/"
+#     type:     annotation
+#     prefix:   /
+#app/config/routing.yml
+nmpolo:
+    type: rest
+    resource: "@ApiBundle/Resources/config/routing.yml"
+
+
+# api:
+#     resource: "@ApiBundle/Controller/"
+#     type: rest
+#     prefix: /
+#     methods:  [POST, PUT, GET]
 
 # app:
 #     resource: "@AppBundle/Controller/"
@@ -26,7 +37,21 @@ fos_oauth_server_authorize:
 fos_oauth_server_authorize:
     resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
 
-api:
-    type: rest
-    resource: "@ApiBundle/Resources/config/routing.yml"
-    prefix: /
+# api:
+#     type: rest
+#     resource: "@ApiBundle/Resources/config/routing.yml"
+#     prefix: /
+
+
+# acme_demo_user_all:
+#     pattern:  /users
+#     defaults: { _controller: ApiBundle:User:getUsers, _format: ~ }
+#     requirements:
+#         _method: GET
+
+
+
+# api:
+#     resource: "@ApiBundle/Controller/Users"
+#     type: annotation
+#     prefix: /api/v1
