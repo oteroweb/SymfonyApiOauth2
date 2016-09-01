@@ -15,6 +15,7 @@ use Symfony\Component\Routing\RouterInterface;
 use ApiBundle\Entity\User;
 use ApiBundle\Repository\UserRepository;
 use ApiBundle\Form\UserType;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 
 class UserController extends FOSRestController   implements ClassResourceInterface 
@@ -54,6 +55,10 @@ class UserController extends FOSRestController   implements ClassResourceInterfa
      */
     public function cgetAction()
     {
+         // if (false === $this->get('security.context')->isGranted('IS_AUTHENTICATED_FULLY')) { 
+
+            // throw new AccessDeniedException('NO');
+        // }
         $user = $this->repo->findAll();
         return $user;
     }
@@ -66,6 +71,7 @@ class UserController extends FOSRestController   implements ClassResourceInterfa
      */
     public function getAction(User $user)
     {
+         // if (false === $this->get('security.context')->isGranted('IS_AUTHENTICATED_FULLY')) {             throw new AccessDeniedException();         }
         return $user;
     }
 
