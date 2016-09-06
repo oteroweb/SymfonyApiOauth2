@@ -21,11 +21,15 @@ class MemberController extends BaseController
     public function getAllAction()
     {
         $users = $this->getDoctrine()->getRepository('ApiBundle:User')->findAll();
-        // $data = array('users' => array());
-        // foreach ($users as $user) { $data['users'][] = $this->serializeUser($user); }
-        // $response = new Response(json_encode($data), 200);
-        // $response->headers->set('Content-Type', 'application/json');
-        // return $response;
+        if (!$users) {
+            $response = new Response('no user');
+             return $response;
+        }
+        $data = array('users' => array());
+        foreach ($users as $user) { $data['users'][] = $this->serializeUser($user); }
+        $response = new Response(json_encode($data), 200);
+        $response->headers->set('Content-Type', 'application/json');
+        return $response;
     }
 
     /**
@@ -72,7 +76,7 @@ class MemberController extends BaseController
      */
     public function updateAction($id, Request $request)
     {
-            $user = $this->getDoctrine()->getRepository('ApiBundle:User')->findId($id);
+            $user = $this->getDoctrine()->getRepository('ApiBundle:User')->find($id);
         if (!$user) {
             throw $this->createNotFoundException(sprintf(
                 'No user found with id "%s"',
@@ -116,6 +120,9 @@ class MemberController extends BaseController
     {
         return array(
             'id' => $user->getId(),
+            'username' => $user->getUsername(),
+            'firstname' => $user->getFirstname(),
+            'lastname' => $user->getLastname(),
             // 'avatarNumber' => $user->getAvatarNumber(),
             // 'powerLevel' => $user->getPowerLevel(),
             // 'tagLine' => $user->getTagLine(),

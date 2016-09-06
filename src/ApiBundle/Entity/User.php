@@ -24,26 +24,26 @@ class User extends BaseUser
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $member_id;
+    protected $id;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="firstname", type="string", length=100)
+     * @ORM\Column(name="firstname", type="string", length=100, nullable=true)
      */
     private $firstname;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="lastname", type="string", length=100)
+     * @ORM\Column(name="lastname", type="string", length=100, nullable=true)
      */
     private $lastname;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_of_birth", type="date")
+     * @ORM\Column(name="date_of_birth", type="date", nullable=true)
      */
     private $dateOfBirth;
 
@@ -53,9 +53,9 @@ class User extends BaseUser
      *
      * @return int
      */
-    public function getMember_id()
+    public function getid()
     {
-        return $this->Member_id;
+        return $this->id;
     }
 
     /**
