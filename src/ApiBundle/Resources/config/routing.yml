@@ -1,4 +1,8 @@
 
-user:
-    type: rest
-    resource: apibundle.controller.user
+# user_api:
+#     type: rest
+#     # resource: apibundle.controller.user
+#     resource: '@ApiBundle/Controller/UserController.php'
+#     # defaults: { _controller: ApiBundle:User:cget }
+#     pattern:  /user
+

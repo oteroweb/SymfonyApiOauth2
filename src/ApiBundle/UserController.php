@@ -53,7 +53,7 @@ class UserController extends FOSRestController   implements ClassResourceInterfa
      * @Rest\View()
      */
     public function cgetAction()
-    {
+    {   
         $user = $this->repo->findAll();
         return $user;
     }

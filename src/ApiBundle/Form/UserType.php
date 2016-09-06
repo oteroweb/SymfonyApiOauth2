@@ -13,7 +13,7 @@ class UserType extends AbstractType
         $builder
              ->add('email', 'email')
              ->add('username')
-             ->add('plainPassword', 'password')
+             // ->add('plainPassword', 'password')
              ->add('password', 'password')
     //           "id": 1,
     // "username": "admin",
@@ -34,6 +34,10 @@ class UserType extends AbstractType
                 'allow_extra_fields' => true
             )
         );
+
+         // $resolver->setDefaults(array(
+            // 'data_class' => 'AppBundle\Entity\Programmer'
+        // ));
     }
 
     public function getName()
