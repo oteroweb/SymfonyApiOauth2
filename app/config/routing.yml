@@ -1,41 +1,25 @@
-# api:
-#     resource: "@ApiBundle/Controller/"
-#     type:     annotation
-#     prefix:   /
-#app/config/routing.yml
-nmpolo:
-    type: rest
-    resource: "@ApiBundle/Resources/config/routing.yml"
-
-
-# api:
-#     resource: "@ApiBundle/Controller/"
-#     type: rest
-#     prefix: /
-#     methods:  [POST, PUT, GET]
-
-# app:
-#     resource: "@AppBundle/Controller/"
-#     type:     annotation
+app_api:
+    resource: "@ApiBundle/Controller"
+    type:     annotation
 
 # app/config/routing.yml
-NelmioApiDocBundle:
-    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
-    prefix:   /api/doc
+# NelmioApiDocBundle:
+#     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+#     prefix:   /api/doc
 
-fos_oauth_server_token:
-    resource: "@FOSOAuthServerBundle/Resources/config/routing/token.xml"
+# fos_oauth_server_token:
+#     resource: "@FOSOAuthServerBundle/Resources/config/routing/token.xml"
 
-fos_oauth_server_authorize:
-    resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
+# fos_oauth_server_authorize:
+#     resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
 
 # app/config/routing.yml
 # fos_user:
     # resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
 
-fos_oauth_server_authorize:
-    resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
+# fos_oauth_server_authorize:
+#     resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
 
 # api:
 #     type: rest
@@ -55,3 +39,32 @@ fos_oauth_server_authorize:
 #     resource: "@ApiBundle/Controller/Users"
 #     type: annotation
 #     prefix: /api/v1
+
+
+# user:
+    # type: rest
+    # resource: apibundle.controller.user
+    # resource: '@ApiBundle/Controller/UserController.php'
+    # defaults: { _controller: ApiBundle:User:cget }
+    # pattern:  / 
+
+
+# api:
+#     resource: "@ApiBundle/Controller/"
+#     type:     annotation
+#     prefix:   /
+#app/config/routing.yml
+# api:
+#     type: rest
+#     resource: "@ApiBundle/Resources/config/routing.yml"
+
+
+# api:
+#     resource: "@ApiBundle/Controller/"
+#     type: rest
+#     prefix: /
+#     methods:  [POST, PUT, GET]
+
+# app:
+#     resource: "@AppBundle/Controller/"
+#     type:     annotation

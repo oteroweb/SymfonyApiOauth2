@@ -54,11 +54,15 @@ class UserController extends FOSRestController   implements ClassResourceInterfa
      * @Rest\View()
      */
     public function cgetAction()
+<<<<<<< HEAD:src/ApiBundle/Controller/UserController.php
     {
          // if (false === $this->get('security.context')->isGranted('IS_AUTHENTICATED_FULLY')) { 
 
             // throw new AccessDeniedException('NO');
         // }
+=======
+    {   
+>>>>>>> 7861e296657b0873c12b86dfb4f46a6da294a6bc:src/ApiBundle/UserController.php
         $user = $this->repo->findAll();
         return $user;
     }

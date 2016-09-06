@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a4f57efa0b8eb5cdeb9e5da01382e67f",
-    "content-hash": "fae2ccfbee6819e1f69f504ce22e0efe",
+    "hash": "5484ec58f227938a61c7e5f276958be0",
+    "content-hash": "9c28f7f46261af44642336e12d865b40",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1887,16 +1887,16 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v5.0.8",
+            "version": "v5.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "f8ace5c71ee309492b027ef71215577f5a52b4ea"
+                "reference": "e5e0d8d06b07864b2752bd865537b0817edf4c5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/f8ace5c71ee309492b027ef71215577f5a52b4ea",
-                "reference": "f8ace5c71ee309492b027ef71215577f5a52b4ea",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/e5e0d8d06b07864b2752bd865537b0817edf4c5a",
+                "reference": "e5e0d8d06b07864b2752bd865537b0817edf4c5a",
                 "shasum": ""
             },
             "require": {
@@ -1935,7 +1935,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2016-08-17 18:16:49"
+            "time": "2016-09-06 01:05:01"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -2727,16 +2727,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.8.9",
+            "version": "v2.8.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "df02dd5d3f7decb3a05c6d0f31054b4263625dcb"
+                "reference": "84e8eb7690eea267526c3d40050b4c54f1878b7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/df02dd5d3f7decb3a05c6d0f31054b4263625dcb",
-                "reference": "df02dd5d3f7decb3a05c6d0f31054b4263625dcb",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/84e8eb7690eea267526c3d40050b4c54f1878b7a",
+                "reference": "84e8eb7690eea267526c3d40050b4c54f1878b7a",
                 "shasum": ""
             },
             "require": {
@@ -2857,20 +2857,20 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2016-07-30 08:48:52"
+            "time": "2016-09-02 20:40:06"
         },
         {
             "name": "twig/twig",
-            "version": "v1.24.1",
+            "version": "v1.24.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512"
+                "reference": "33093f6e310e6976baeac7b14f3a6ec02f2d79b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3566d311a92aae4deec6e48682dc5a4528c4a512",
-                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/33093f6e310e6976baeac7b14f3a6ec02f2d79b7",
+                "reference": "33093f6e310e6976baeac7b14f3a6ec02f2d79b7",
                 "shasum": ""
             },
             "require": {
@@ -2918,7 +2918,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-05-30 09:11:59"
+            "time": "2016-09-01 17:50:53"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -2962,20 +2962,23 @@
         },
         {
             "name": "willdurand/negotiation",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willdurand/Negotiation.git",
-                "reference": "a8ce6da7acdf07351ccd6a9359c571ebc0725a21"
+                "reference": "1ebc51dd6d47f4037b0d2493335304e5aea50ab6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/a8ce6da7acdf07351ccd6a9359c571ebc0725a21",
-                "reference": "a8ce6da7acdf07351ccd6a9359c571ebc0725a21",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/1ebc51dd6d47f4037b0d2493335304e5aea50ab6",
+                "reference": "1ebc51dd6d47f4037b0d2493335304e5aea50ab6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
             },
             "type": "library",
             "extra": {
@@ -3007,22 +3010,22 @@
                 "header",
                 "negotiation"
             ],
-            "time": "2015-11-21 14:23:02"
+            "time": "2016-08-30 11:08:41"
         }
     ],
     "packages-dev": [
         {
             "name": "sensio/generator-bundle",
-            "version": "v3.0.7",
+            "version": "v3.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "d1be460925376703a470a3ac6ec034eb7eab3892"
+                "reference": "3c20d16512f37d2be159eca0411b99a141b90fa4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/d1be460925376703a470a3ac6ec034eb7eab3892",
-                "reference": "d1be460925376703a470a3ac6ec034eb7eab3892",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/3c20d16512f37d2be159eca0411b99a141b90fa4",
+                "reference": "3c20d16512f37d2be159eca0411b99a141b90fa4",
                 "shasum": ""
             },
             "require": {
@@ -3061,20 +3064,20 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2016-06-20 05:58:05"
+            "time": "2016-09-06 01:30:19"
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v2.8.9",
+            "version": "v2.8.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "bc61b781fa7f07f9a2ed4e69b15d5c2238695fc0"
+                "reference": "fc69aad7dba2ab3eed5cf90c8e3ede4fb961effd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/bc61b781fa7f07f9a2ed4e69b15d5c2238695fc0",
-                "reference": "bc61b781fa7f07f9a2ed4e69b15d5c2238695fc0",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/fc69aad7dba2ab3eed5cf90c8e3ede4fb961effd",
+                "reference": "fc69aad7dba2ab3eed5cf90c8e3ede4fb961effd",
                 "shasum": ""
             },
             "require": {
@@ -3116,7 +3119,7 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 05:31:50"
+            "time": "2016-08-19 06:48:01"
         }
     ],
     "aliases": [],
